@@ -1,8 +1,9 @@
 var express = require('express');
+var fs = require('fs');
 
 var app = express.createServer(express.logger());
 
-var i = fs.readFileSync("index.html","utf8");
+var i = fs.readFileSync("./index.html","utf8");
 
 //var i = "hello world 2";
 
